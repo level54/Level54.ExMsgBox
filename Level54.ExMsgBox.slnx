@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="Level54.ExMsgBox.Harness/Level54.ExMsgBox.Harness.csproj" />
+  <Project Path="Level54.ExMsgBox.Tests/Level54.ExMsgBox.Tests.csproj" />
+  <Project Path="Level54.ExMsgBox/Level54.ExMsgBox.csproj" />
+  <Project Path="WinFormsTest/WinFormsTest.csproj" Id="89321b4a-234e-46f7-bcbd-938b78ac2ed8" />
+  <Project Path="WinFormsTest472/WinFormsTest472.csproj" Id="c06acfdd-f28b-43f2-b08c-75e08ce9eaa6" />
+</Solution>

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Level54.ExMsgBox\Level54.ExMsgBox.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.ExceptionMessageBox">
+      <HintPath>..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.ExceptionMessageBox\v4.0_16.0.0.0__89845dcd8080cc91\Microsoft.ExceptionMessageBox.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

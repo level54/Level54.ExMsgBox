@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>Level54.ExMsgBox.Harness</RootNamespace>
+    <AssemblyName>Level54.ExMsgBox.Harness</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Level54.ExMsgBox\Level54.ExMsgBox.csproj" />
+  </ItemGroup>
+
+</Project>
