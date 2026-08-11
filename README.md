@@ -62,9 +62,13 @@ try
 }
 catch (Exception ex)
 {
-    ExceptionMessageBox.Show(this, ex);
+    new ExceptionMessageBox(ex).Show(this);
 }
 ```
+
+There are deliberately **no static `Show(...)` overloads** — Microsoft's original had none, and adding
+them breaks VB consumers, which reach `Shared` members through an instance reference and so find
+`box.Show(Nothing)` ambiguous between `Show(Exception)` and `Show(IWin32Window)` (`BC30521`).
 
 Instance API for full customisation:
 

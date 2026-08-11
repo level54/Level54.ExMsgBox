@@ -92,11 +92,10 @@ public class ExceptionMessageBox
         return result;
     }
 
-    public static DialogResult Show(Exception exception) =>
-        new ExceptionMessageBox(exception).Show(null);
-
-    public static DialogResult Show(IWin32Window? owner, Exception exception) =>
-        new ExceptionMessageBox(exception).Show(owner);
+    // No static Show(...) convenience overloads. Microsoft's original ExceptionMessageBox had
+    // none, and adding them breaks VB consumers: VB reaches Shared members through an instance
+    // reference, so a static Show(Exception) makes the ordinary `box.Show(Nothing)` ambiguous
+    // with the instance Show(IWin32Window) (BC30521). Construct and call Show(owner).
 
     public static string GetMessageText(Exception exception) =>
         MessageTextBuilder.BuildDetailsText(exception, caption: string.Empty);
