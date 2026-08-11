@@ -11,8 +11,8 @@
     <Company>Level54</Company>
     <Description>WinForms exception message box dialog with details panel and clipboard support</Description>
     <Copyright>Copyright © Level54 2026</Copyright>
-    <AssemblyVersion>2026.05.31.0</AssemblyVersion>
-    <FileVersion>2026.05.31.0</FileVersion>
+    <AssemblyVersion>2026.08.11.0</AssemblyVersion>
+    <FileVersion>2026.08.11.0</FileVersion>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
